@@ -21,8 +21,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://formspree.io/nychka93@gmail.com",
                 type: "POST",
+                dataType: "json",
                 data: {
                     name: name,
                     phone: phone,
